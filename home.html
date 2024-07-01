@@ -4,6 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Page </title>
+<style>
+        /* Centering the content and adding blank spaces on the sides */
+        .page-heading {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .page-heading img {
+            width: 60px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .page-heading h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        #text {
+            max-width: 800px;
+            /* Adjust max-width as needed */
+            padding: 20px;
+            /* Optional: Adding padding for better readability */
+            background-color: #fff;
+            /* Optional: Adding a background color to the content area */
+            border: 1px solid #ccc;
+            /* Optional: Adding a border for visual separation */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Optional: Adding a box shadow for depth */
+        }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT0V7T62WF"></script>
@@ -42,7 +74,75 @@
           </div>
         </div>
       </nav>
-      <h1>THis is home page</h1>
+      <div class="page-heading">
+        <img src="https://www.json.org/img/json160.gif" alt="JSON Logo">
+        <h1>Introducing JSON</h1>
+    </div>
+    <div id="container">
+        <div id="text">
+
+            <p><b>JSON</b> (JavaScript Object Notation) is a lightweight data-interchange
+                format. It is easy for humans to read and write. It is easy for machines to
+                parse and generate. It is based on a subset of the
+                JavaScript
+                Programming Language Standard
+                ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely
+                language independent but uses conventions that are familiar to programmers of
+                the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python,
+                and many others. These properties make JSON an ideal data-interchange language.</p>
+            <p>JSON is built on two structures:</p>
+            <ul>
+                <li>A collection of name/value pairs. In various languages, this is realized
+                    as an <i>object</i>, record, struct, dictionary, hash table, keyed list, or
+                    associative array.</li>
+                <li>An ordered list of values. In most languages, this is realized as an <i>array</i>,
+                    vector, list, or sequence.</li>
+            </ul>
+            <p>These are universal data structures. Virtually all modern
+                programming languages support them in one form or another. It makes sense
+                that a data format that is interchangeable with programming languages also
+                be based on these structures.</p>
+            <p>In JSON, they take on these forms:</p>
+            <p>An <i>object</i> is an unordered set of name/value pairs. An object
+                begins with <tt>{</tt><small>left brace</small> and ends
+                with <tt>}</tt><small>right brace</small>. Each name is followed
+                by <tt>:</tt><small>colon</small> and the name/value pairs are
+                separated by <tt>,</tt><small>comma</small>.</p>
+
+            <center><img src="https://www.json.org/img/object.png" style="width: 100%;"></center>
+
+            <p>An <i>array</i> is an ordered collection of values. An array begins
+                with <tt>[</tt><small>left bracket</small> and ends
+                with <tt>]</tt><small>right bracket</small>. Values are separated
+                by <tt>,</tt><small>comma</small>.</p>
+
+            <center><img src="https://www.json.org/img/array.png" style="width: 100%;"></center>
+
+            <p>A <i>value</i> can be a <i>string</i> in double quotes, or a <i>number</i>,
+                or <tt>true</tt> or <tt>false</tt> or <tt>null</tt>, or an <i>object</i> or
+                an <i>array</i>. These structures can be nested.</p>
+
+            <center><img src="https://www.json.org/img/value.png" style="width: 100%;"></center>
+
+            <p>A <i>string</i> is a sequence of zero or more Unicode characters, wrapped
+                in double quotes, using backslash escapes. A character is represented as a
+                single character string. A string is very much like a C or Java string.</p>
+
+            <center><img src="https://www.json.org/img/string.png" style="width: 100%;"></center>
+
+            <p>A <i>number</i> is very much like a C or Java number, except that the octal
+                and hexadecimal formats are not used.</p>
+
+            <center><img src="https://www.json.org/img/number.png" style="width: 100%;"></center>
+
+            <p>Whitespace can be inserted between any pair of tokens. Excepting
+                a few encoding details, that completely describes the language.</p>
+
+            <center><img src="https://www.json.org/img/whitespace.png" style="width: 100%;"></center>
+        </div>
+
+
+    </div>
 
 
 
